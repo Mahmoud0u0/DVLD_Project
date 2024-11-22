@@ -27,7 +27,7 @@ namespace DVLD.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            clsUser user= clsUser.FindByUsernameAndPassword(txtUserName.Text.Trim(),txtPassword.Text.Trim());
+            clsUser user = clsUser.FindByUsernameAndPassword(txtUserName.Text.Trim(),txtPassword.Text.Trim());
 
             if (user != null) 
             { 
@@ -80,6 +80,11 @@ namespace DVLD.Login
             }
             else
                 chkRememberMe.Checked = false;
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
